@@ -63,3 +63,6 @@ typings/
 # project files and directories
 js/
 .DS_Store
+
+#VS Code
+*.code-workspace
