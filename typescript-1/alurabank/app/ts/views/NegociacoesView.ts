@@ -1,18 +1,6 @@
 // app/ts/views/NegociacoesView.ts
 
-class NegociacoesView {
-
-    private _elemento: Element;
-
-    constructor(seletor: string) {
-
-        this._elemento = document.querySelector(seletor);
-    }
-
-    update(model: Negociacoes): void {
-
-        this._elemento.innerHTML = this.template(model);
-    }
+class NegociacoesView extends View<Negociacoes> {
 
     template(model: Negociacoes): string {
         return `

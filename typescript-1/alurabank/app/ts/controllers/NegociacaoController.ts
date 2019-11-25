@@ -9,6 +9,7 @@ class NegociacaoController {
     private _negociacoes = new Negociacoes();
 
     private _negociacoesView = new NegociacoesView('#negociacoesView');
+    private _mensagemView = new MensagemView('#mensagemView');
 
     constructor() {
 
@@ -18,19 +19,29 @@ class NegociacaoController {
 
         this._negociacoesView.update(this._negociacoes);
     }
-
+    
     adiciona(event : Event) {
-
+        
         event.preventDefault();
-
+        
         const negociacao = new Negociacao(
             new Date(this._inputData.value.replace(/-/g, ',')),
             parseInt(this._inputQuantidade.value),
             parseFloat(this._inputValor.value)
         );
-
+            
         this._negociacoes.adiciona(negociacao);
-
+        
         this._negociacoesView.update(this._negociacoes);
+        this._mensagemView.update('Negociação adicionada com sucesso.');
+
+        this.limpa();
+    }
+
+    limpa() {
+        
+        this._inputData.value = "";
+        this._inputQuantidade.value = "1";
+        this._inputValor.value = "0.0";
     }
 }
