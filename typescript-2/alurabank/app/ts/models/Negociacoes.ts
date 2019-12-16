@@ -1,6 +1,7 @@
 // app/ts/models/Negociacoes.ts
 
 import { Negociacao } from './index'
+import { logarTempoDeExecucao } from '../helpers/decorators/index';
 
 export class Negociacoes {
 
