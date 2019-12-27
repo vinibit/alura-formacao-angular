@@ -10,6 +10,6 @@
         "experimentalDecorators": true
     },
     "include": [
-        "app/ts/**/*"
+        "app/ts/**/*"        
     ]
 }
