@@ -64,5 +64,8 @@ typings/
 js/
 .DS_Store
 
-#VS Code
+# VS Code
 *.code-workspace
+
+# Webpack
+dist/
