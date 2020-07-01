@@ -1,0 +1,13 @@
+table {
+    box-shadow: 5px 5px 5px black
+
+}
+
+th {
+    background-color: rgb(29, 201, 236);
+}
+
+tfoot tr {
+    background-color: rgb(28, 104, 122);
+    color: whitesmoke;
+}
