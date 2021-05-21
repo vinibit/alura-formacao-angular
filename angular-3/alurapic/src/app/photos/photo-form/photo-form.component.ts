@@ -1,13 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, Validators } from '@angular/forms';
-import { FormGroup } from '@angular/forms';
+import { FormBuilder, Validators, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 import { PhotoService } from '../photo/photo.service';
 
 @Component({
     selector: 'ap-photo-form',
-    templateUrl: './photo-form.component.html',
-    styleUrls: ['./photo-form.component.css']
+    templateUrl: './photo-form.component.html'
 })
 export class PhotoFormComponent implements OnInit {
 
