@@ -26,6 +26,7 @@ export class PhotoService {
 
         return this.http
             .get<Photo[]>(API + '/' + userName + '/photos', { params });       
+            //.get<Photo[]>(API + '/' + userName + '/xxxxx', { params });       
     } 
     
     upload(description: string, allowComments: boolean, file: File) {
